@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(29,98,112);
+    background: linear-gradient(90deg, rgba(29,98,112,1) 0%, rgba(26,86,103,1) 9%, rgba(24,79,98,1) 13%, rgba(21,69,90,1) 19%, rgba(19,64,86,1) 24%, rgba(17,57,81,1) 30%, rgba(15,49,75,1) 35%, rgba(11,37,66,1) 43%, rgba(10,32,62,1) 50%, rgba(8,25,57,1) 57%, rgba(6,18,52,1) 63%, rgba(3,8,44,1) 81%, rgba(3,41,34,1) 89%, rgba(2,0,36,1) 96%);
+}
+
+#box{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 228, 196, 0.386);
+    border-radius: 30px 10px 30px 30px;
+}
+
+#tabuleiro{
+    width: 600px;
+    border: 2px solid #000;
+    transform: rotate(-90deg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrado{
+    width: 75px;
+    height: 75px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 40px #000;
+}
+
+.quadrado:hover{
+    cursor: pointer;
+}
+
+.preto{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.branco{
+    background-color: white;
+}
+
+.pecas{/*Imagens*/
+    width: 30px;
+}
+
+#listaNum{
+    width: 35px;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#listaLetras{
+    width: 600px;
+    height: 25px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#listaNum p, #listaLetras p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
